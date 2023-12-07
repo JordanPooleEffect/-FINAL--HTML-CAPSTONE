@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Keyboards - KeyTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="piano">
+    <!--(Goal) To create an about us page on KeyTech-->
+    <div class="header">
+
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="learn.html">Keyboards</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="(INC)link 1.html">(Wow) Incoming Stock</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor()" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <!-- Code below is used to make the main content of our website -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 1.jpeg" alt="Image 1">
+        </div>
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 2.jpeg" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 3.jpg" alt="Image 3">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="title_box">
+        <div class="for_the_p">CHOOSE THE RIGHT KEYBOARD FOR YOU!</div>
+    </div>
+
+    <div class="content-container">
+        <div class="hidden-sentence">
+            <h2>1. Introduction to Keyboards</h2>
+            <p>
+                Keyboards are input devices that allow users to interact with computers by pressing keys to input text and commands.
+                Understanding the basic keyboard layout and function is crucial for efficient computer use.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> For beginners, a standard QWERTY keyboard is recommended.</p>
+        </div>
+    
+        <div class="hidden-sentence">
+            <h2>2. Types of Keyboards</h2>
+            <p>
+                There are various types of keyboards, including membrane, mechanical, ergonomic, and more.
+                Each type offers different tactile feedback and features.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Choose a keyboard type based on your preference and usage. Mechanical keyboards are popular for their tactile feel.</p>
+        </div>
+    
+        <div class="hidden-sentence">
+            <h2>3. Mechanical Keyboards</h2>
+            <p>
+                Mechanical keyboards use individual mechanical switches for each key. They are known for durability,
+                tactile feedback, and the distinct sound of key presses.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Consider factors like switch type (Cherry MX, etc.) and backlighting based on your preferences.</p>
+        </div>
+    
+        <div class="hidden-sentence">
+            <h2>4. Gaming Keyboards</h2>
+            <p>
+                Gaming keyboards often feature customizable keys, RGB lighting, and specialized key switches optimized for gaming.
+                Consider your gaming preferences and the types of games you play when choosing a gaming keyboard.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Look for features like anti-ghosting, programmable keys, and comfortable key switches.</p>
+        </div>
+    
+        <div class="hidden-sentence">
+            <h2>5. Ergonomic Keyboards</h2>
+            <p>
+                Ergonomic keyboards are designed to reduce muscle strain and discomfort during prolonged typing sessions.
+                They may have a split design or a curved layout to promote a more natural hand position.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Consider your comfort needs and typing habits. Some may prefer a traditional layout, while others benefit from a split design.</p>
+        </div>
+
+        <div class="hidden-sentence">
+            <h2>6. Wireless Keyboards</h2>
+            <p>
+                Wireless keyboards offer the flexibility of movement and a cleaner desk setup. They connect to computers via Bluetooth or USB receivers.
+                Consider battery life and connectivity options when choosing a wireless keyboard.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Look for reliable wireless connectivity and a comfortable layout.</p>
+        </div>
+    
+        <div class="hidden-sentence">
+            <h2>7. Tenkeyless Keyboards</h2>
+            <p>
+                Tenkeyless (TKL) keyboards lack the numeric keypad, making them more compact. They are popular among gamers and users with limited desk space.
+                Consider your need for a numeric keypad before opting for a tenkeyless keyboard.
+            </p>
+            <br>
+            <p><strong>What to Buy:</strong> Ideal for those who don't frequently use the numeric keypad and prefer a more compact design.</p>
+        </div>
+    </div>
+    
+        <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+        <footer>
+            <div class="footer_content">
+                <div class="fillers">
+                    <a href="termsOfService.html" class="footer-link">Terms of Service</a>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

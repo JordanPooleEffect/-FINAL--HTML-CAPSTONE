@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms Of Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg1">
+    <!--(Goal) To create an about us page on KeyTech-->
+    <div class="header">
+
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="learn.html">Keyboards</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="(INC)link 1.html">(Wow) Incoming Stock</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor()" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+    
+    <div class="content-container1">
+        <section id="privacy-policy">
+            <h1>Privacy Policy</h1>
+
+            <hr>
+
+            <h3>1. Introduction</h3>
+            <p>Welcome to KeyTech. This Privacy Policy outlines how we collect, use, and protect your personal information.</p>
+
+            <h3>2. Information Collected</h3>
+            <p>We may collect personal information, including but not limited to names, email addresses, and device information. Additionally, we may gather data automatically, such as IP addresses and browsing behavior.</p>
+
+            <h3>3. How Information is Collected</h3>
+            <p>We collect information through user-provided forms, cookies, and other tracking technologies.</p>
+
+            <h3>4. Purpose of Collection</h3>
+            <p>The information we collect is used for purposes such as account creation, transactions, analytics, and improving our services.</p>
+
+            <h3>5. Use of Information</h3>
+            <p>We use collected information to personalize user experiences, communicate important updates, and enhance our services.</p>
+
+            <h3>6. Sharing of Information</h3>
+            <p>We may share personal information with third parties, including service providers and advertisers, to improve our services and offer relevant content.</p>
+
+            <h3>7. Data Security</h3>
+            <p>We take measures to secure and protect your data, including encryption, secure connections, and access controls.</p>
+
+            <h3>8. Data Retention</h3>
+            <p>We retain collected data for a specified period, based on criteria related to the purpose of collection.</p>
+
+            <h3>9. User Rights</h3>
+            <p>Users have the right to access, correct, delete, or download their personal data. For inquiries, please contact us at KeyTech@gmail.com.</p>
+
+            <h3>10. Cookies and Tracking Technologies</h3>
+            <p>We use cookies and similar technologies to enhance user experiences. Users can manage cookie preferences through their browser settings.</p>
+
+            <h3>11. Changes to the Privacy Policy</h3>
+            <p>This Privacy Policy may be updated. Users will be notified of changes, and continued use of our website constitutes acceptance of the updated policy.</p>
+
+            <h3>12. Contact Information</h3>
+            <p>If you have any questions or concerns about our Privacy Policy, please contact us at KeyTech@gmail.com.</p>
+        </section>
+    </div>
+
+    <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <a href="termsOfService.html" class="footer-link">Terms of Service</a>
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
